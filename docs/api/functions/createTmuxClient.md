@@ -8,7 +8,7 @@
 
 > **createTmuxClient**(`opts?`): [`TmuxClient`](../interfaces/TmuxClient.md)
 
-Defined in: tmux.ts:163
+Defined in: [tmux.ts:163](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L163)
 
 tmux 遥控客户端工厂：CLI 驱动的建会话/发文本/抓 pane/杀会话全套。
 

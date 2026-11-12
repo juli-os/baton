@@ -8,7 +8,7 @@
 
 > **createPty**(`cmd`, `opts?`, `onData?`): [`PtySession`](../interfaces/PtySession.md)
 
-Defined in: pty.ts:31
+Defined in: [pty.ts:31](https://github.com/juli-os/baton/blob/main/src/baton/pty.ts#L31)
 
 以 /usr/bin/expect 分配伪终端运行命令，返回双向字节流的操控面。
 

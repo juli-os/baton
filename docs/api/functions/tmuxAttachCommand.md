@@ -8,7 +8,7 @@
 
 > **tmuxAttachCommand**(`socketPath`, `session`, `bin?`): readonly `string`[]
 
-Defined in: pty.ts:78
+Defined in: [pty.ts:78](https://github.com/juli-os/baton/blob/main/src/baton/pty.ts#L78)
 
 attach 命令拼装（纯函数可测）：专属 socket（tmux_socket_path）必须随行——
 引擎 server 与 default socket 分家后，裸 `tmux attach` 会 attach 到错误的

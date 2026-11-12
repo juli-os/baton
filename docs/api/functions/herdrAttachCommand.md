@@ -8,7 +8,7 @@
 
 > **herdrAttachCommand**(`session`, `bin?`): readonly `string`[]
 
-Defined in: herdr.ts:882
+Defined in: [herdr.ts:882](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L882)
 
 herdr attach 命令：附着整个 namespace（TUI 全屏，xterm 完整承载）。
 herdr 无单 pane 的 PTY attach 命令（agent attach 需已识别的 agent 在位，

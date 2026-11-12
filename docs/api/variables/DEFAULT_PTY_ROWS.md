@@ -8,6 +8,6 @@
 
 > `const` **DEFAULT\_PTY\_ROWS**: `32` = `32`
 
-Defined in: pty.ts:28
+Defined in: [pty.ts:28](https://github.com/juli-os/baton/blob/main/src/baton/pty.ts#L28)
 
 缺省 PTY 行数。

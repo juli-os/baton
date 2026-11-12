@@ -6,7 +6,7 @@
 
 # Interface: FakeHerdr
 
-Defined in: herdr.ts:950
+Defined in: [herdr.ts:950](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L950)
 
 fake herdr server（契约测试用）：进程内 unix socket 上跑换行分隔 JSON，
 记录收到的全部请求，按状态机应答 workspace/tab/pane 的最小闭环。
@@ -17,7 +17,7 @@ fake herdr server（契约测试用）：进程内 unix socket 上跑换行分�
 
 > `readonly` **requests**: `object`[]
 
-Defined in: herdr.ts:952
+Defined in: [herdr.ts:952](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L952)
 
 #### method
 
@@ -33,7 +33,7 @@ Defined in: herdr.ts:952
 
 > `readonly` **socketPath**: `string`
 
-Defined in: herdr.ts:951
+Defined in: [herdr.ts:951](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L951)
 
 ## Methods
 
@@ -41,7 +41,7 @@ Defined in: herdr.ts:951
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: herdr.ts:955
+Defined in: [herdr.ts:955](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L955)
 
 #### Returns
 
@@ -53,7 +53,7 @@ Defined in: herdr.ts:955
 
 > **setReads**(`texts`): `void`
 
-Defined in: herdr.ts:954
+Defined in: [herdr.ts:954](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L954)
 
 脚本化 pane.read 输出（sendTextConfirmed 轮询的回放序列）。
 

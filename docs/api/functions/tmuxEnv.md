@@ -8,7 +8,7 @@
 
 > **tmuxEnv**(): `ProcessEnv`
 
-Defined in: tmux.ts:48
+Defined in: [tmux.ts:48](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L48)
 
 tmux 子进程环境：强制声明一个 UTF-8 locale（2026-10-10 launchd 裸环境事故）。
 tmux 在无任何 LANG/LC_* 的环境里进非 UTF-8 模式，`-F` 格式串里的字面 tab

@@ -8,7 +8,7 @@
 
 > **HookSpecFactory** = (`hookJsPath`, `password`, `serviceUrl`, `sessionExpr?`) => readonly [`HookSpec`](../interfaces/HookSpec.md)[]
 
-Defined in: hooks.ts:20
+Defined in: [hooks.ts:20](https://github.com/juli-os/baton/blob/main/src/baton/hooks.ts#L20)
 
 hook 命令组的注入工厂：调用方（agents）传自己的 defaultHookSpecs——
 sessionExpr 是「hook 进程内解析我在哪个会话」的 shell 表达式，随终端后端

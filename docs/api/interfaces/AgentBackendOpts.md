@@ -6,7 +6,7 @@
 
 # Interface: AgentBackendOpts
 
-Defined in: backend.ts:34
+Defined in: [backend.ts:34](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L34)
 
 后端工厂的构造项（基底选择/socket 与 namespace/终端覆盖位/hook 工厂注入）。
 
@@ -16,7 +16,7 @@ Defined in: backend.ts:34
 
 > `readonly` `optional` **backend?**: [`AgentBackendKind`](../type-aliases/AgentBackendKind.md)
 
-Defined in: backend.ts:36
+Defined in: [backend.ts:36](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L36)
 
 终端基底（默认 tmux——现状默认，零行为变化）。
 
@@ -26,7 +26,7 @@ Defined in: backend.ts:36
 
 > `readonly` `optional` **dataDir?**: `string`
 
-Defined in: backend.ts:44
+Defined in: [backend.ts:44](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L44)
 
 env 文件落盘目录（引擎 data_dir；缺省 ~/.juli-service）。tmux 后端忽略。
 
@@ -36,7 +36,7 @@ env 文件落盘目录（引擎 data_dir；缺省 ~/.juli-service）。tmux 后�
 
 > `readonly` `optional` **herdrSession?**: `string`
 
-Defined in: backend.ts:40
+Defined in: [backend.ts:40](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L40)
 
 herdr 命名 session namespace（默认 'juli'，与 tmux 专属 socket 同位的隔离位）。
 
@@ -46,7 +46,7 @@ herdr 命名 session namespace（默认 'juli'，与 tmux 专属 socket 同位�
 
 > `readonly` `optional` **herdrSocketPath?**: `string`
 
-Defined in: backend.ts:42
+Defined in: [backend.ts:42](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L42)
 
 herdr socket 路径覆盖（缺省=命名 session 固定布局；测试指向 fake server）。
 
@@ -56,7 +56,7 @@ herdr socket 路径覆盖（缺省=命名 session 固定布局；测试指向 fa
 
 > `readonly` `optional` **hookSpecs?**: [`HookSpecFactory`](../type-aliases/HookSpecFactory.md)
 
-Defined in: backend.ts:54
+Defined in: [backend.ts:54](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L54)
 
 CC hook 命令组工厂（注入位）：tmux 分枝按工厂缺省会话名表达式调用、
 herdr 分枝按 JULI_HERDR_SESSION 表达式调用（herdrHookSpecs）。缺省 =
@@ -69,7 +69,7 @@ defaultHookSpecs 后行为与原先逐字一致。
 
 > `readonly` `optional` **log?**: (`m`) => `void`
 
-Defined in: backend.ts:55
+Defined in: [backend.ts:55](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L55)
 
 #### Parameters
 
@@ -87,7 +87,7 @@ Defined in: backend.ts:55
 
 > `readonly` `optional` **socketPath?**: `string`
 
-Defined in: backend.ts:38
+Defined in: [backend.ts:38](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L38)
 
 tmux 专属 socket 路径（undefined=default socket）。
 
@@ -97,7 +97,7 @@ tmux 专属 socket 路径（undefined=default socket）。
 
 > `readonly` `optional` **terminal?**: [`TmuxClient`](TmuxClient.md)
 
-Defined in: backend.ts:49
+Defined in: [backend.ts:49](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L49)
 
 终端覆盖位（测试/嵌入接缝，与 runtime 的 seams.tmux 同一语义）：提供时
 工厂不内建终端——产物 terminal、tmux 分枝的 applyEnv/attach 全走它，

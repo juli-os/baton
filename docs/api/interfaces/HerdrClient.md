@@ -6,7 +6,7 @@
 
 # Interface: HerdrClient
 
-Defined in: herdr.ts:168
+Defined in: [herdr.ts:168](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L168)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: herdr.ts:168
 
 > `readonly` **backend**: `"herdr"`
 
-Defined in: herdr.ts:169
+Defined in: [herdr.ts:169](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L169)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: herdr.ts:169
 
 > `readonly` **session**: `string`
 
-Defined in: herdr.ts:170
+Defined in: [herdr.ts:170](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L170)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: herdr.ts:170
 
 > `readonly` `optional` **socketPath?**: `string`
 
-Defined in: tmux.ts:120
+Defined in: [tmux.ts:120](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L120)
 
 本 client 绑定的 socket 路径（undefined=default socket）。web 终端
 attach 侧用它拼 `-S`——PTY attach 是裸 tmux 命令，不经本 client。
@@ -49,7 +49,7 @@ attach 侧用它拼 `-S`——PTY attach 是裸 tmux 命令，不经本 client�
 
 > **agentAtPaneOf**(`session`): `Promise`\<`string`\>
 
-Defined in: herdr.ts:186
+Defined in: [herdr.ts:186](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L186)
 
 pane 上被识别的 agent（pane.list 的 agent 字段，herdr PaneInfo.agent）：
 非空 = `agent attach <pane>` 的在位前置成立。裸 shell / 寻址失败回空串
@@ -72,7 +72,7 @@ agent_not_found、PTY 秒死）。
 
 > **capturePane**(`name`, `lines?`): `Promise`\<`Result`\<`string`, `Error`\>\>
 
-Defined in: tmux.ts:157
+Defined in: [tmux.ts:157](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L157)
 
 #### Parameters
 
@@ -98,7 +98,7 @@ Defined in: tmux.ts:157
 
 > **foregroundCommandOf**(`name`): `Promise`\<`string`\>
 
-Defined in: tmux.ts:126
+Defined in: [tmux.ts:126](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L126)
 
 会话 pane 的前台进程名（probePane 的 shell/agent 判定数据源）。
 失败回空串——probe 对空 cmd 按 shell 处理（容错语义的一部分）。
@@ -123,7 +123,7 @@ Defined in: tmux.ts:126
 
 > **hasSession**(`name`): `Promise`\<`boolean`\>
 
-Defined in: tmux.ts:121
+Defined in: [tmux.ts:121](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L121)
 
 #### Parameters
 
@@ -145,7 +145,7 @@ Defined in: tmux.ts:121
 
 > **interrupt**(`name`): `Promise`\<`Result`\<`void`, `Error`\>\>
 
-Defined in: tmux.ts:159
+Defined in: [tmux.ts:159](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L159)
 
 #### Parameters
 
@@ -167,7 +167,7 @@ Defined in: tmux.ts:159
 
 > **killSession**(`name`): `Promise`\<`Result`\<`void`, `Error`\>\>
 
-Defined in: tmux.ts:158
+Defined in: [tmux.ts:158](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L158)
 
 #### Parameters
 
@@ -189,7 +189,7 @@ Defined in: tmux.ts:158
 
 > **listSessions**(): `Promise`\<readonly `string`[]\>
 
-Defined in: tmux.ts:138
+Defined in: [tmux.ts:138](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L138)
 
 全部会话名。任何失败（含 tmux 不在）都归一为空数组——签名无错误通道，
 消费方（snapshot）以 stale 快照兜底、零会话与故障同形即可；要区分
@@ -209,7 +209,7 @@ Defined in: tmux.ts:138
 
 > **listSessionsDetailed**(): `Promise`\<`Result`\<readonly [`TmuxSessionInfo`](TmuxSessionInfo.md)[], `Error`\>\>
 
-Defined in: tmux.ts:142
+Defined in: [tmux.ts:142](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L142)
 
 单条 list-sessions 批量取会话元数据（列表面 N+1 消除）：
 `#{session_name}\t#{session_attached}\t#{pane_current_path}\t#{pane_current_command}`。
@@ -229,7 +229,7 @@ Defined in: tmux.ts:142
 
 > **newSession**(`name`, `cwd?`): `Promise`\<`Result`\<`void`, `Error`\>\>
 
-Defined in: tmux.ts:143
+Defined in: [tmux.ts:143](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L143)
 
 #### Parameters
 
@@ -255,7 +255,7 @@ Defined in: tmux.ts:143
 
 > **paneIdOf**(`session`): `Promise`\<`string`\>
 
-Defined in: herdr.ts:181
+Defined in: [herdr.ts:181](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L181)
 
 会话 pane 的 herdr 公共 id（`wB:p2` 形态）——单 pane attach（`agent
 attach <pane-id>`）的入参。解析失败回空串（调用方决定兜底语义）。
@@ -276,7 +276,7 @@ attach <pane-id>`）的入参。解析失败回空串（调用方决定兜底语
 
 > **panePathOf**(`name`): `Promise`\<`string`\>
 
-Defined in: tmux.ts:128
+Defined in: [tmux.ts:128](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L128)
 
 会话 pane 的 cwd（快照/恢复用）。失败回空串。
 
@@ -300,7 +300,7 @@ Defined in: tmux.ts:128
 
 > **sendKey**(`name`, `key`): `Promise`\<`Result`\<`void`, `Error`\>\>
 
-Defined in: tmux.ts:123
+Defined in: [tmux.ts:123](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L123)
 
 发单键（对话框导航/接受用；多键文本走 sendText）。
 
@@ -328,7 +328,7 @@ Defined in: tmux.ts:123
 
 > **sendText**(`name`, `text`): `Promise`\<`Result`\<`void`, `Error`\>\>
 
-Defined in: tmux.ts:147
+Defined in: [tmux.ts:147](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L147)
 
 发文本进会话。>10 字符走 bracketed-paste + 回车（原子），短文本直接
 send-keys（tmux 对短参数的逐键合并语义与 Go 版一致）。无提交确认——
@@ -358,7 +358,7 @@ send-keys（tmux 对短参数的逐键合并语义与 Go 版一致）。无提�
 
 > **sendTextConfirmed**(`name`, `text`): `Promise`\<`Result`\<[`SubmitStats`](SubmitStats.md), `Error`\>\>
 
-Defined in: tmux.ts:150
+Defined in: [tmux.ts:150](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L150)
 
 确认式发送：paste + Enter 后轮询验证输入框已重置；Enter 被吞只补 Enter
 （不重发文本），~20s 内确认或显性失败（guard=submit_unconfirmed）。
@@ -387,7 +387,7 @@ Defined in: tmux.ts:150
 
 > **sendTextQueued**(`name`, `text`): `Promise`\<`Result`\<[`SubmitStats`](SubmitStats.md) & `object`, `Error`\>\>
 
-Defined in: tmux.ts:156
+Defined in: [tmux.ts:156](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L156)
 
 入队式投递（intervene/relay 面，2026-09-23 插话 400 事故）：忙碌会话里
 CC 把输入排队消费、输入框不重置是常态——严格提交确认对它永远超时
@@ -419,7 +419,7 @@ CC 把输入排队消费、输入框不重置是常态——严格提交确认�
 
 > **sessionBirthsOf**(): `Promise`\<`ReadonlyMap`\<`string`, `number`\>\>
 
-Defined in: tmux.ts:131
+Defined in: [tmux.ts:131](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L131)
 
 会话名 → 出生点（epoch ms）。无 server/后端无此概念/失败 = 空表——
 调用方（transcript 人机混仓门控）空表即保守回落不门控。
@@ -438,7 +438,7 @@ Defined in: tmux.ts:131
 
 > **setEnv**(`vars`): `Promise`\<`Result`\<`void`, `Error`\>\>
 
-Defined in: tmux.ts:134
+Defined in: [tmux.ts:134](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L134)
 
 会话环境注入（AI 段密钥等）：tmux=set-environment -g 逐项；herdr=
 新建 workspace 的 tab env 注入面。已在跑会话不受影响（两侧同语义）。
@@ -463,7 +463,7 @@ Defined in: tmux.ts:134
 
 > **startManagedAgent**(`session`, `opts`): `Promise`\<`Result`\<[`HerdrAgentInfo`](HerdrAgentInfo.md), `Error`\>\>
 
-Defined in: herdr.ts:178
+Defined in: [herdr.ts:178](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L178)
 
 herdr 原生托管 agent 启动（`herdr agent start` 的 socket 形态，0.9.5+）：
 在会话 pane 里以 herdr 管理生命周期的方式拉起一个交互 agent（如

@@ -6,7 +6,7 @@
 
 # Interface: TmuxSessionInfo
 
-Defined in: tmux.ts:68
+Defined in: [tmux.ts:68](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L68)
 
 list-sessions 批量取回的会话元数据行（名/附着态/cwd/前台命令）。
 
@@ -16,7 +16,7 @@ list-sessions 批量取回的会话元数据行（名/附着态/cwd/前台命令
 
 > `readonly` **attached**: `boolean`
 
-Defined in: tmux.ts:70
+Defined in: [tmux.ts:70](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L70)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: tmux.ts:70
 
 > `readonly` **cmd**: `string`
 
-Defined in: tmux.ts:72
+Defined in: [tmux.ts:72](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L72)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: tmux.ts:72
 
 > `readonly` **name**: `string`
 
-Defined in: tmux.ts:69
+Defined in: [tmux.ts:69](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L69)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: tmux.ts:69
 
 > `readonly` **path**: `string`
 
-Defined in: tmux.ts:71
+Defined in: [tmux.ts:71](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L71)

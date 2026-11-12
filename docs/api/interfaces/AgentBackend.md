@@ -6,7 +6,7 @@
 
 # Interface: AgentBackend
 
-Defined in: backend.ts:59
+Defined in: [backend.ts:59](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L59)
 
 随终端基底变化的六件事的正交聚合面（引擎唯一消费的终端后端契约）。
 
@@ -16,7 +16,7 @@ Defined in: backend.ts:59
 
 > `readonly` **describe**: `string`
 
-Defined in: backend.ts:62
+Defined in: [backend.ts:62](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L62)
 
 人读描述（warmup/诊断日志）：`tmux socket=default` / `herdr session=juli`。
 
@@ -26,7 +26,7 @@ Defined in: backend.ts:62
 
 > `readonly` **kind**: [`AgentBackendKind`](../type-aliases/AgentBackendKind.md)
 
-Defined in: backend.ts:60
+Defined in: [backend.ts:60](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L60)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: backend.ts:60
 
 > `readonly` **terminal**: [`TmuxClient`](TmuxClient.md)
 
-Defined in: backend.ts:64
+Defined in: [backend.ts:64](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L64)
 
 终端契约——派发/探测/快照管线的唯一消费面。
 
@@ -44,7 +44,7 @@ Defined in: backend.ts:64
 
 > **applyEnv**(`vars`): `void`
 
-Defined in: backend.ts:74
+Defined in: [backend.ts:74](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L74)
 
 AI 段 env 注入（[key, value] 对）。
 
@@ -64,7 +64,7 @@ readonly (readonly \[`string`, `string`\])[]
 
 > **attach**(`session`, `opts`, `onData?`): `Promise`\<`Result`\<[`PtySession`](PtySession.md), `Error`\>\>
 
-Defined in: backend.ts:70
+Defined in: [backend.ts:70](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L70)
 
 web 终端 attach：会话不存在明确报错、不代建。
 
@@ -92,7 +92,7 @@ web 终端 attach：会话不存在明确报错、不代建。
 
 > **bootCommand**(`base`, `session`): `string`
 
-Defined in: backend.ts:72
+Defined in: [backend.ts:72](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L72)
 
 引导命令包装：base=引擎选好的 claude 启动命令，session=目标会话名。
 
@@ -116,7 +116,7 @@ Defined in: backend.ts:72
 
 > **hookSpecs**(`hookJsPath`, `password`, `serviceUrl`): readonly [`HookSpec`](HookSpec.md)[]
 
-Defined in: backend.ts:66
+Defined in: [backend.ts:66](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L66)
 
 CC hook 命令组（installClaudeHooks 的入参）。
 
@@ -144,7 +144,7 @@ readonly [`HookSpec`](HookSpec.md)[]
 
 > **listSync**(): readonly `string`[]
 
-Defined in: backend.ts:68
+Defined in: [backend.ts:68](https://github.com/juli-os/baton/blob/main/src/baton/backend.ts#L68)
 
 会话名单同步源（router listSync；失败/缺席归一空名单）。
 

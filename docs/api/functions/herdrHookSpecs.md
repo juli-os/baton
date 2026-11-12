@@ -8,7 +8,7 @@
 
 > **herdrHookSpecs**(`hookSpecs`, `hookJsPath`, `password?`, `serviceUrl?`): readonly [`HookSpec`](../interfaces/HookSpec.md)[]
 
-Defined in: herdr.ts:869
+Defined in: [herdr.ts:869](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L869)
 
 CC hook 的 herdr 会话名解析：workspace 建 tab 时注入的 JULI_HERDR_SESSION
 env（claude 进程及其 hook 子进程继承）。tmux 分枝用 display-message 运行

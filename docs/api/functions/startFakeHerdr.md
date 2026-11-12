@@ -8,7 +8,7 @@
 
 > **startFakeHerdr**(`socketPath`): `Promise`\<[`FakeHerdr`](../interfaces/FakeHerdr.md)\>
 
-Defined in: herdr.ts:958
+Defined in: [herdr.ts:958](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L958)
 
 ## Parameters
 

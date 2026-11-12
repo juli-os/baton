@@ -8,7 +8,7 @@
 
 > **herdrSocketPath**(`session`): `string`
 
-Defined in: herdr.ts:74
+Defined in: [herdr.ts:74](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L74)
 
 命名 session namespace 的 socket 路径（herdr 固定布局）。
 

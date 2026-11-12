@@ -8,6 +8,6 @@
 
 > `const` **TMUX\_BIN**: `string`
 
-Defined in: tmux.ts:40
+Defined in: [tmux.ts:40](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L40)
 
 进程级解析一次：启动时定死，运行中不漂移（测试直调 resolveTmuxBin 注入）。

@@ -6,7 +6,7 @@
 
 # Interface: HerdrManagedAgentStart
 
-Defined in: herdr.ts:192
+Defined in: [herdr.ts:192](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L192)
 
 agent.start 入参（herdr AgentStartParams 直译；name 规则=小写字母开头、
 仅小写/数字/'-'/'_'、≤32 字符，kind 必须 herdr detect 名单内——两样都由
@@ -18,7 +18,7 @@ herdr 侧校验，这里不重复实现，错误原文透传可诊断）。
 
 > `readonly` `optional` **args?**: readonly `string`[]
 
-Defined in: herdr.ts:196
+Defined in: [herdr.ts:196](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L196)
 
 透传给 agent CLI 的参数（如 zcode 的 --cwd/--resume）。
 
@@ -28,7 +28,7 @@ Defined in: herdr.ts:196
 
 > `readonly` **kind**: `string`
 
-Defined in: herdr.ts:194
+Defined in: [herdr.ts:194](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L194)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: herdr.ts:194
 
 > `readonly` **name**: `string`
 
-Defined in: herdr.ts:193
+Defined in: [herdr.ts:193](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L193)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: herdr.ts:193
 
 > `readonly` `optional` **shellSettleMs?**: `number`
 
-Defined in: herdr.ts:202
+Defined in: [herdr.ts:202](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L202)
 
 pane shell 落回提示符的等待预算毫秒（新建 workspace 的 zsh 还在跑
 启动文件时，herdr 侧 shell-idle 检查会先回 agent_pane_busy——本层按
@@ -56,6 +56,6 @@ pane shell 落回提示符的等待预算毫秒（新建 workspace 的 zsh 还�
 
 > `readonly` `optional` **timeoutMs?**: `number`
 
-Defined in: herdr.ts:198
+Defined in: [herdr.ts:198](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L198)
 
 启动就绪等待预算毫秒（>3000 且 ≤300000，缺省 herdr 30s）。

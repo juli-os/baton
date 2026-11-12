@@ -8,7 +8,7 @@
 
 > **attachTmuxPty**(`tmux`, `session`, `opts?`, `onData?`): `Promise`\<`Result`\<[`PtySession`](../interfaces/PtySession.md), `Error`\>\>
 
-Defined in: pty.ts:91
+Defined in: [pty.ts:91](https://github.com/juli-os/baton/blob/main/src/baton/pty.ts#L91)
 
 attach 一个 tmux 会话，返回 PTY 会话。
 

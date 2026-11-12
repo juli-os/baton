@@ -8,7 +8,7 @@
 
 > **resolveTmuxBin**(`pathEnv?`, `exists?`): `string`
 
-Defined in: tmux.ts:28
+Defined in: [tmux.ts:28](https://github.com/juli-os/baton/blob/main/src/baton/tmux.ts#L28)
 
 tmux 二进制解析（2026-10-08 新机迁移 GUI 拉起引擎事故）：GUI 子进程默认
 PATH 只有 /usr/bin:/bin:/usr/sbin:/sbin——homebrew 的 tmux 会 spawn ENOENT

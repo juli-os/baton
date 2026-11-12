@@ -6,7 +6,7 @@
 
 # Interface: PtySession
 
-Defined in: pty.ts:19
+Defined in: [pty.ts:19](https://github.com/juli-os/baton/blob/main/src/baton/pty.ts#L19)
 
 已起 PTY 的操控面：写 stdin、杀进程、等退出码。
 
@@ -16,7 +16,7 @@ Defined in: pty.ts:19
 
 > `readonly` **exit**: `Promise`\<`number`\>
 
-Defined in: pty.ts:22
+Defined in: [pty.ts:22](https://github.com/juli-os/baton/blob/main/src/baton/pty.ts#L22)
 
 ## Methods
 
@@ -24,7 +24,7 @@ Defined in: pty.ts:22
 
 > **kill**(): `void`
 
-Defined in: pty.ts:21
+Defined in: [pty.ts:21](https://github.com/juli-os/baton/blob/main/src/baton/pty.ts#L21)
 
 #### Returns
 
@@ -36,7 +36,7 @@ Defined in: pty.ts:21
 
 > **write**(`data`): `void`
 
-Defined in: pty.ts:20
+Defined in: [pty.ts:20](https://github.com/juli-os/baton/blob/main/src/baton/pty.ts#L20)
 
 #### Parameters
 

@@ -6,7 +6,7 @@
 
 # Interface: HerdrWireResponse
 
-Defined in: herdr.ts:82
+Defined in: [herdr.ts:82](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L82)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: herdr.ts:82
 
 > `readonly` `optional` **error?**: `object`
 
-Defined in: herdr.ts:85
+Defined in: [herdr.ts:85](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L85)
 
 #### code
 
@@ -30,7 +30,7 @@ Defined in: herdr.ts:85
 
 > `readonly` **id**: `string`
 
-Defined in: herdr.ts:83
+Defined in: [herdr.ts:83](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L83)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: herdr.ts:83
 
 > `readonly` `optional` **result?**: `Record`\<`string`, `unknown`\>
 
-Defined in: herdr.ts:84
+Defined in: [herdr.ts:84](https://github.com/juli-os/baton/blob/main/src/baton/herdr.ts#L84)
